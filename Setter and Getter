@@ -1,0 +1,36 @@
+using System;
+
+namespace Settter_Getter
+{
+    class User
+    {
+        static void Main(string[] args)
+        {
+            user dian = new user();
+            dian.Username = "dita2003";
+            dian.Password = "belajarc#";
+
+            Console.WriteLine("Username = " + dian.Username);
+            Console.WriteLine("Password = " + dian.Password);
+
+            Console.ReadKey();
+        }
+    }
+    public class user
+    {
+        string username;
+        string password;
+        public string Username
+        {
+            get { return username; }
+            set { username = value; }
+        }
+
+        public string Password
+        {
+            get { return password; }
+            set { password = value; }
+        }
+    }
+
+}
